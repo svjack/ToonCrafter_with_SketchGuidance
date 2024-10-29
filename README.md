@@ -6,7 +6,53 @@ This repository is an implementation that recreates the SketchGuidance feature o
 
 https://github.com/user-attachments/assets/f72f287d-f848-4982-8f91-43c49d037007
 
+# ToonCrafter with Sketch Guidance
 
+## Overview
+This repository contains the ToonCrafter model with additional sketch guidance functionality. The model is hosted on GitHub and can be accessed via the following link:
+
+- **Repository:** [https://github.com/svjack/ToonCrafter_with_SketchGuidance](https://github.com/svjack/ToonCrafter_with_SketchGuidance)
+
+## Installation
+
+### Clone the Repository
+To clone the repository and set up the environment, follow these steps:
+
+```bash
+git clone https://github.com/svjack/ToonCrafter_with_SketchGuidance && cd ToonCrafter_with_SketchGuidance
+```
+
+### List Control Models
+After cloning the repository, you can list the control models available:
+
+```bash
+ls control_models
+```
+
+### Download Sketch Encoder
+Download the `sketch_encoder.ckpt` file from the Hugging Face repository:
+
+```bash
+wget https://huggingface.co/Doubiiu/ToonCrafter/resolve/main/sketch_encoder.ckpt
+```
+
+### Copy Sketch Encoder to Control Models
+Move the downloaded `sketch_encoder.ckpt` file to the `control_models` directory:
+
+```bash
+cp sketch_encoder.ckpt control_models
+```
+
+## Usage
+
+### Run the Gradio App
+Once the repository is cloned and the necessary files are in place, you can run the Gradio app using the following command:
+
+```bash
+python gradio_app.py
+```
+
+This will start the Gradio interface, allowing you to interact with the ToonCrafter model with sketch guidance.
 
 ## 🧰 Models
 
